@@ -1,53 +1,39 @@
-
-//      "firstName": "Emily",
- //     "lastName": "Johnson",
-//      "maidenName": "Smith",
-//     "age": 29,
-//     "gender": "female",
-  //    "email": "emily.johnson@x.dummyjson.com",
- //     "phone": "+81 965-431-3024",
- //     "username": "emilys",
- //     "password": "emilyspass",
-
+const ENTIDAD_USERS = "users";
+const CAMPOS_USERS = ["id", "firstName", "lastName", "email", "phone"];
+const INPUTS_CREATE_USERS = ["inputFirstName", "inputLastName", "inputEmail", "inputPhone"];
+const INPUTS_UPDATE_USERS = ["update_id_users", "update_firstName", "update_lastName", "update_email", "update_phone"];
 
 function crearUsuario() {
-
-    let primerNombre = document.getElementById("Primer_Nombre").value;
-    let segundoNombre = document.getElementById("Segundo_Nombre").value;
-    let apellido = document.getElementById("Apellido").value;
-    let edad = document.getElementById("Edad").value;
-    let genero = document.getElementById("Genero_Sexual").value;
-    let correo = document.getElementById("Correo_Electronico").value;
-    let telefono = document.getElementById("Telefono").value;
-    let usuairo = document.getElementById("Nombre_Usuario").value;
-    let contraseña = document.getElementById("Contraseña").value;
-
-    if (primerNombre =="" || segundoNombre =="" || apellido =="" || edad =="" || genero =="" || correo =="" || telefono == "" ||usuairo == "" || contraseña) {   
-        alert("Debes de llenar todos los campos");
-        return;
-    }
-
-    let UsuarioNuevo ={
-        firstName : primerNombre,
-        lastName : segundoNombre,
-        maidenName : apellido,
-        age : edad,
-        gender : genero,
-        email : correo,
-        phone : telefono,
-        username : usuairo,
-        password : contraseña
+    let datos = {
+        firstName: document.getElementById("inputFirstName").value,
+        lastName: document.getElementById("inputLastName").value,
+        email: document.getElementById("inputEmail").value,
+        phone: document.getElementById("inputPhone").value
     };
+    crear(ENTIDAD_USERS, datos, INPUTS_CREATE_USERS, CAMPOS_USERS);
+}
 
-    api.create("users", crearUsuario)
-        then(function(data){
+function obtenerUsuarios() {
+    let filtroId = document.getElementById("idConsultUsers").value;
+    obtener(ENTIDAD_USERS, CAMPOS_USERS, filtroId);
+}
 
-    });
+function consultarUpdateUsers() {
+    let filtroId = document.getElementById("update_id_users").value;
+    obtener(ENTIDAD_USERS, CAMPOS_USERS, filtroId);
+}
 
+function actualizarUsuario() {
+    let id = document.getElementById("update_id_users").value;
+    let datos = {
+        firstName: document.getElementById("update_firstName").value,
+        lastName: document.getElementById("update_lastName").value,
+        email: document.getElementById("update_email").value,
+        phone: document.getElementById("update_phone").value
+    };
+    actualizar(ENTIDAD_USERS, id, datos, INPUTS_UPDATE_USERS, CAMPOS_USERS);
+}
 
-    function limpiarFormulario(params) {
-        
-    }
-
-
+function borrarUsuario(id) {
+    borrar(id, ENTIDAD_USERS, CAMPOS_USERS);
 }

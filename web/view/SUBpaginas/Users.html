@@ -1,45 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users — CRUD Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="nav-logo">⚡ CRUD Manager</div>
+            <div class="nav-links">
+                <a href="../Principal.html">Inicio</a>
+                <a href="Products.html">Productos</a>
+                <a href="Users.html">Usuarios</a>
+                <a href="Posts.html">Posts</a>
+                <a href="Carts.html">Carrito</a>
+            </div>
+        </nav>
+    </header>
 
+    <div class="contenedor">
 
- <div class="card-form">
-    <label for="">Ingresa tu  Primer nombre</label>
-    <input id ="Primer_Nombre"  type="text" placeholder="Primer Nombre"class="form-control mb-3">
+        <div class="page-header">
+            <h1>👤 Gestión de Usuarios</h1>
+            <p class="page-subtitle">Administra los usuarios del sistema</p>
+        </div>
 
-    <label for="">Ingresa tu Segundo nombre</label>
-    <input id ="Segundo_Nombre"  type="text" placeholder="Segundo Nombre"class="form-control mb-3">
+        <!-- FORMULARIOS GRID -->
+        <div class="forms-grid">
 
-    <label for="">Ingresa tu Apellido</label>
-    <input id ="Apellido"  type="text" placeholder="Apellido"class="form-control mb-3">
+            <!-- CREAR -->
+            <div class="card-form">
+                <div class="card-form-header">
+                    <span class="card-form-icon">➕</span>
+                    <h2>Agregar Usuario</h2>
+                </div>
+                <label>Nombre</label>
+                <input type="text" id="inputFirstName" class="form-control mb-3" placeholder="Nombre" />
+                <label>Apellido</label>
+                <input type="text" id="inputLastName" class="form-control mb-3" placeholder="Apellido" />
+                <label>Email</label>
+                <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email" />
+                <label>Teléfono</label>
+                <input type="text" id="inputPhone" class="form-control mb-3" placeholder="Teléfono" />
+                <button class="btn btn-success w-100" onclick="crearUsuario()">Agregar Usuario</button>
+            </div>
 
-    <label for="">Ingresa tu Edad</label>
-    <input id ="Edad"  type="number" placeholder="Edad"class="form-control mb-3">
+            <!-- ACTUALIZAR -->
+            <div class="card-form">
+                <div class="card-form-header">
+                    <span class="card-form-icon">✏️</span>
+                    <h2>Actualizar Usuario</h2>
+                </div>
+                <label>ID del usuario</label>
+                <div style="display:flex; gap:10px; margin-bottom:15px;">
+                    <input type="text" id="update_id_users" class="form-control" placeholder="ID" />
+                    <button class="btn btn-success" onclick="consultarUpdateUsers()">Buscar</button>
+                </div>
+                <label>Nombre</label>
+                <input type="text" id="update_firstName" class="form-control mb-3" placeholder="Nombre" />
+                <label>Apellido</label>
+                <input type="text" id="update_lastName" class="form-control mb-3" placeholder="Apellido" />
+                <label>Email</label>
+                <input type="email" id="update_email" class="form-control mb-3" placeholder="Email" />
+                <label>Teléfono</label>
+                <input type="text" id="update_phone" class="form-control mb-3" placeholder="Teléfono" />
+                <button class="btn btn-success w-100" onclick="actualizarUsuario()">Actualizar Usuario</button>
+            </div>
 
-    <label for="">Ingresa tu Genero<label>
-    <input id ="Genero_Sexual"  type="text" placeholder="Gnero Sexual"class="form-control mb-3">
+        </div>
 
-    <label for="">Ingresa tu Correo Electronico</label>
-    <input id ="Correo_Electronico"  type="email" placeholder="Correo Electronico"class="form-control mb-3">
+        <!-- BUSCADOR Y BORRAR -->
+        <div class="actions-grid">
 
-    <label for="">Ingresa tu NUmero Telefonico</label>
-    <input id ="Telefono"  type="number" placeholder="Telefono"class="form-control mb-3">
+            <div class="consulta-box">
+                <span class="consulta-icon">🔍</span>
+                <label>Buscar por ID</label>
+                <input type="text" class="form-control" placeholder="ID del usuario" id="idConsultUsers" />
+                <button class="btn btn-success" onclick="obtenerUsuarios()">Buscar</button>
+                <button class="btn btn-outline" onclick="document.getElementById('idConsultUsers').value=''; obtenerUsuarios()">Ver todos</button>
+            </div>
 
-    <label for="">Ingresa tu Nombre de Usuario</label>
-    <input id ="Nombre_Usuario"  type="text" placeholder="Nombre de Usuario"class="form-control mb-3">
+            <div class="consulta-box danger-box">
+                <span class="consulta-icon">🗑️</span>
+                <label>Eliminar usuario</label>
+                <input type="text" id="inputBorrarUser" class="form-control" placeholder="ID del usuario" />
+                <button class="btn btn-danger" onclick="borrarUsuario(document.getElementById('inputBorrarUser').value)">Eliminar</button>
+            </div>
 
-    <label for="">Ingresa tu Contraseña</label>
-    <input id ="Contraseña"  type="password" placeholder="Contraseña"class="form-control mb-3">
+        </div>
 
-    
- </div>
+        <p id="resultado"></p>
 
+        <!-- TABLA -->
+        <div class="table-section">
+            <h2 class="table-title">📋 Lista de Usuarios</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="container"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../js/api.js"></script>
+    <script src="../../js/Crud.js"></script>
+    <script src="../../js/Users.js"></script>
+    <script>
+        obtenerUsuarios();
+        document.querySelectorAll("nav a").forEach(function(link) {
+            if (link.href === window.location.href) link.classList.add("active");
+        });
+    </script>
 </body>
 </html>

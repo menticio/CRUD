@@ -38,7 +38,15 @@ const api ={
     .then(function(res){
         return res.json();
     });
+  },
+
+  readOne: function(entity, id) {
+    return fetch(`${base_url}/${entity}/${id}`)
+        .then(function(res) {
+            return res.json();
+        });
   }
+
 };
 
 

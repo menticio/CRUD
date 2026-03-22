@@ -4,41 +4,39 @@
 const tbody = document.getElementById("container");
 
 // ============================================
-// RENDERIZAR — pinta cualquier entidad en la tabla
-// @param data — arreglo de datos del servidor
-// @param campos — campos a mostrar ej: ["id","title","price"]
-// @param filtroId — id para filtrar, "" muestra todos
+// RENDERIZAR
 // ============================================
-function renderizar(data, campos, filtroId) {
+function renderizar(data, campos, filtroId, entidad) {
     tbody.innerHTML = "";
     data.forEach(function(item) {
         if (filtroId == "" || item.id == filtroId) {
-            tbody.innerHTML += construirFila(item, campos);
+            tbody.innerHTML += construirFila(item, campos, entidad);
         }
     });
     asignarEventos(campos);
 }
 
 // ============================================
-// CONSTRUIR FILA — genera el HTML de una fila
-// @param item — objeto con los datos
-// @param campos — campos a mostrar
+// CONSTRUIR FILA
 // ============================================
-function construirFila(item, campos) {
+function construirFila(item, campos, entidad) {
     let celdas = campos.map(function(campo) {
         return `<td>${item[campo]}</td>`;
     }).join("");
 
-    return `<tr>
-        ${celdas}
+    let btnUpdate = entidad !== "carts" ? `
         <td>
             <button class="btn-update"
-                data-item='${JSON.stringify(item)}'>
+                data-item='${encodeURIComponent(JSON.stringify(item))}'>
                 Update
             </button>
-        </td>
+        </td>` : `<td></td>`;
+
+    return `<tr>
+        ${celdas}
+        ${btnUpdate}
         <td>
-            <button onclick='borrar("${item.id}")'>
+            <button onclick='borrar("${item.id}", "${entidad}", ${JSON.stringify(campos)})'>
                 Delete
             </button>
         </td>
@@ -46,37 +44,31 @@ function construirFila(item, campos) {
 }
 
 // ============================================
-// ASIGNAR EVENTOS — onclick a botones Update
+// ASIGNAR EVENTOS
 // ============================================
 function asignarEventos(campos) {
     document.querySelectorAll(".btn-update").forEach(function(btn) {
         btn.onclick = function() {
-            let item = JSON.parse(this.dataset.item);
+            let item = JSON.parse(decodeURIComponent(this.dataset.item));
             precargar(item, campos);
         };
     });
 }
 
 // ============================================
-// OBTENER — llama API y renderiza
-// @param entidad — "products", "users", etc
-// @param campos — campos a mostrar
-// @param filtroId — id para filtrar
+// OBTENER
 // ============================================
 function obtener(entidad, campos, filtroId) {
     api.read(entidad)
         .then(function(data) {
-            renderizar(data, campos, filtroId);
+            renderizar(data, campos, filtroId, entidad);
         });
 }
 
 // ============================================
-// CREAR — valida, llama API y limpia formulario
-// @param entidad — "products", "users", etc
-// @param datos — objeto con los datos nuevos
-// @param camposLimpiar — ids de inputs a limpiar
+// CREAR
 // ============================================
-function crear(entidad, datos, camposLimpiar) {
+function crear(entidad, datos, camposLimpiar, campos) {
     let valoresVacios = Object.values(datos).some(function(v) {
         return v == "";
     });
@@ -89,12 +81,12 @@ function crear(entidad, datos, camposLimpiar) {
     api.create(entidad, datos)
         .then(function(data) {
             limpiarFormulario(...camposLimpiar);
-            obtener(entidad, campos);
+            obtener(entidad, campos, "");
         });
 }
 
 // ============================================
-// ACTUALIZAR — valida, llama API y limpia
+// ACTUALIZAR
 // ============================================
 function actualizar(entidad, id, datos, camposLimpiar, campos) {
     let valoresVacios = Object.values(datos).some(function(v) {
@@ -109,12 +101,12 @@ function actualizar(entidad, id, datos, camposLimpiar, campos) {
     api.update(entidad, id, datos)
         .then(function(data) {
             limpiarFormulario(...camposLimpiar);
-            obtener(entidad, campos);
+            obtener(entidad, campos, "");
         });
 }
 
 // ============================================
-// BORRAR — confirma y llama API
+// BORRAR
 // ============================================
 function borrar(id, entidad, campos) {
     if (id == "") {
@@ -126,13 +118,13 @@ function borrar(id, entidad, campos) {
     if (confirmacion) {
         api.delete(entidad, id)
             .then(function(data) {
-                obtener(entidad, campos);
+                obtener(entidad, campos, "");
             });
     }
 }
 
 // ============================================
-// PRECARGAR — llena inputs del formulario Update
+// PRECARGAR
 // ============================================
 function precargar(item, campos) {
     campos.forEach(function(campo) {
@@ -142,10 +134,21 @@ function precargar(item, campos) {
 }
 
 // ============================================
-// LIMPIAR FORMULARIO — vacía los inputs
+// LIMPIAR FORMULARIO
 // ============================================
 function limpiarFormulario(...ids) {
     ids.forEach(function(id) {
         document.getElementById(id).value = "";
     });
 }
+
+// ============================================
+// NAV ACTIVO — marca el link actual
+// ============================================
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("nav a").forEach(function(link) {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+        }
+    });
+});

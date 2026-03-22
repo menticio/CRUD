@@ -4,29 +4,113 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestión de Productos</title>
-
+    <title>CRUD Manager</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="css/style.css">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
 
 <body>
 
-
     <header>
         <nav>
-            <a href="SUBpaginas/Products.html">Productos</a>
-            <a href="SUBpaginas/Users.html">Usuarios</a>
-            <a href="SUBpaginas/Posts.html">Envios</a>
-            <a href="SUBpaginas/Carts.html">Carrito</a>
+            <div class="nav-logo">⚡ CRUD Manager</div>
+            <div class="nav-links">
+                <a href="SUBpaginas/Products.html">Productos</a>
+                <a href="SUBpaginas/Users.html">Usuarios</a>
+                <a href="SUBpaginas/Posts.html">Posts</a>
+                <a href="SUBpaginas/Carts.html">Carrito</a>
+            </div>
         </nav>
     </header>
 
-    
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-badge">REST API · JSON Server · DummyJSON</div>
+        <h1>Gestión de datos<br><span>simple y poderosa</span></h1>
+        <p>Administra tus entidades con operaciones Create, Read, Update y Delete en tiempo real.</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards-grid">
+
+        <a href="SUBpaginas/Products.html" class="entity-card">
+            <div class="entity-icon">📦</div>
+            <h3>Products</h3>
+            <p>Gestiona el catálogo completo de productos</p>
+            <div class="crud-badges">
+                <span class="badge-c">C</span>
+                <span class="badge-r">R</span>
+                <span class="badge-u">U</span>
+                <span class="badge-d">D</span>
+            </div>
+        </a>
+
+        <a href="SUBpaginas/Users.html" class="entity-card">
+            <div class="entity-icon">👤</div>
+            <h3>Users</h3>
+            <p>Administra los usuarios del sistema</p>
+            <div class="crud-badges">
+                <span class="badge-c">C</span>
+                <span class="badge-r">R</span>
+                <span class="badge-u">U</span>
+                <span class="badge-d">D</span>
+            </div>
+        </a>
+
+        <a href="SUBpaginas/Carts.html" class="entity-card">
+            <div class="entity-icon">🛒</div>
+            <h3>Carts</h3>
+            <p>Controla los carritos de compra</p>
+            <div class="crud-badges">
+                <span class="badge-c">C</span>
+                <span class="badge-r">R</span>
+                <span class="badge-u">U</span>
+                <span class="badge-d">D</span>
+            </div>
+        </a>
+
+        <a href="SUBpaginas/Posts.html" class="entity-card">
+            <div class="entity-icon">📝</div>
+            <h3>Posts</h3>
+            <p>Maneja publicaciones y contenido</p>
+            <div class="crud-badges">
+                <span class="badge-c">C</span>
+                <span class="badge-r">R</span>
+                <span class="badge-u">U</span>
+                <span class="badge-d">D</span>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Entidades</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Operaciones CRUD</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">REST</div>
+            <div class="stat-label">Arquitectura API</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">JSON</div>
+            <div class="stat-label">Formato de datos</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll("nav a").forEach(function(link) {
+            if (link.href === window.location.href) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
 </body>
-   
 </html>
