@@ -1,252 +1,10 @@
 {
   "products": [
     {
-      "id": "11",
-      "title": "Annibale Colombo Bed",
-      "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+      "title": "Knoll Saarinyrtyen Executive Conference Chair",
+      "price": "499.99",
       "category": "furniture",
-      "price": 1899.99,
-      "discountPercentage": 8.57,
-      "rating": 4.77,
-      "stock": 88,
-      "tags": [
-        "furniture",
-        "beds"
-      ],
-      "brand": "Annibale Colombo",
-      "sku": "FUR-ANN-ANN-011",
-      "weight": 10,
-      "dimensions": {
-        "width": 28.16,
-        "height": 25.36,
-        "depth": 17.28
-      },
-      "warrantyInformation": "1 year warranty",
-      "shippingInformation": "Ships in 1 month",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 2,
-          "comment": "Would not recommend!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Christopher West",
-          "reviewerEmail": "christopher.west@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Vivian Carter",
-          "reviewerEmail": "vivian.carter@x.dummyjson.com"
-        },
-        {
-          "rating": 1,
-          "comment": "Poor quality!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Mason Wright",
-          "reviewerEmail": "mason.wright@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "No return policy",
-      "minimumOrderQuantity": 1,
-      "meta": {
-        "createdAt": "2025-04-30T09:41:02.053Z",
-        "updatedAt": "2025-04-30T09:41:02.053Z",
-        "barcode": "3610757456581",
-        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"
-    },
-    {
-      "id": "12",
-      "title": "Annibale Colombo Sofa",
-      "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
-      "category": "furniture",
-      "price": 2499.99,
-      "discountPercentage": 14.4,
-      "rating": 3.92,
-      "stock": 60,
-      "tags": [
-        "furniture",
-        "sofas"
-      ],
-      "brand": "Annibale Colombo",
-      "sku": "FUR-ANN-ANN-012",
-      "weight": 6,
-      "dimensions": {
-        "width": 12.75,
-        "height": 20.55,
-        "depth": 19.06
-      },
-      "warrantyInformation": "Lifetime warranty",
-      "shippingInformation": "Ships in 1 week",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 3,
-          "comment": "Very unhappy with my purchase!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Christian Perez",
-          "reviewerEmail": "christian.perez@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Fast shipping!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Lillian Bishop",
-          "reviewerEmail": "lillian.bishop@x.dummyjson.com"
-        },
-        {
-          "rating": 1,
-          "comment": "Poor quality!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Lillian Simmons",
-          "reviewerEmail": "lillian.simmons@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "7 days return policy",
-      "minimumOrderQuantity": 1,
-      "meta": {
-        "createdAt": "2025-04-30T09:41:02.053Z",
-        "updatedAt": "2025-04-30T09:41:02.053Z",
-        "barcode": "1777662847736",
-        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp"
-    },
-    {
-      "id": "13",
-      "title": "Bedside Table African Cherry",
-      "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
-      "category": "furniture",
-      "price": 299.99,
-      "discountPercentage": 19.09,
-      "rating": 2.87,
-      "stock": 64,
-      "tags": [
-        "furniture",
-        "bedside tables"
-      ],
-      "brand": "Furniture Co.",
-      "sku": "FUR-FUR-BED-013",
-      "weight": 2,
-      "dimensions": {
-        "width": 13.47,
-        "height": 24.99,
-        "depth": 27.35
-      },
-      "warrantyInformation": "5 year warranty",
-      "shippingInformation": "Ships overnight",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 4,
-          "comment": "Excellent quality!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Aaliyah Hanson",
-          "reviewerEmail": "aaliyah.hanson@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Excellent quality!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Liam Smith",
-          "reviewerEmail": "liam.smith@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Highly recommended!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Avery Barnes",
-          "reviewerEmail": "avery.barnes@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "7 days return policy",
-      "minimumOrderQuantity": 3,
-      "meta": {
-        "createdAt": "2025-04-30T09:41:02.053Z",
-        "updatedAt": "2025-04-30T09:41:02.053Z",
-        "barcode": "6441287925979",
-        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp"
-    },
-    {
-      "id": "14",
-      "title": "Knoll Saarinen Executive Conference Chair",
-      "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
-      "category": "furniture",
-      "price": 499.99,
-      "discountPercentage": 2.01,
-      "rating": 4.88,
-      "stock": 26,
-      "tags": [
-        "furniture",
-        "office chairs"
-      ],
-      "brand": "Knoll",
-      "sku": "FUR-KNO-KNO-014",
-      "weight": 10,
-      "dimensions": {
-        "width": 13.81,
-        "height": 7.5,
-        "depth": 5.62
-      },
-      "warrantyInformation": "2 year warranty",
-      "shippingInformation": "Ships overnight",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 2,
-          "comment": "Waste of money!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Ella Cook",
-          "reviewerEmail": "ella.cook@x.dummyjson.com"
-        },
-        {
-          "rating": 2,
-          "comment": "Very dissatisfied!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Clara Berry",
-          "reviewerEmail": "clara.berry@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Would buy again!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Elena Long",
-          "reviewerEmail": "elena.long@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "60 days return policy",
-      "minimumOrderQuantity": 5,
-      "meta": {
-        "createdAt": "2025-04-30T09:41:02.053Z",
-        "updatedAt": "2025-04-30T09:41:02.053Z",
-        "barcode": "8919386859966",
-        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
-        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"
+      "id": "14"
     },
     {
       "id": "15",
@@ -543,64 +301,6 @@
         "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
       ],
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp"
-    },
-    {
-      "id": "20",
-      "title": "Cooking Oil",
-      "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
-      "category": "groceries",
-      "price": 4.99,
-      "discountPercentage": 9.33,
-      "rating": 4.8,
-      "stock": 10,
-      "tags": [
-        "cooking essentials"
-      ],
-      "sku": "GRO-BRD-COO-020",
-      "weight": 5,
-      "dimensions": {
-        "width": 19.95,
-        "height": 27.54,
-        "depth": 24.86
-      },
-      "warrantyInformation": "Lifetime warranty",
-      "shippingInformation": "Ships in 1-2 business days",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 5,
-          "comment": "Very happy with my purchase!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Victoria McDonald",
-          "reviewerEmail": "victoria.mcdonald@x.dummyjson.com"
-        },
-        {
-          "rating": 2,
-          "comment": "Would not recommend!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Hazel Evans",
-          "reviewerEmail": "hazel.evans@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Would buy again!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Zoe Bennett",
-          "reviewerEmail": "zoe.bennett@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "30 days return policy",
-      "minimumOrderQuantity": 46,
-      "meta": {
-        "createdAt": "2025-04-30T09:41:02.053Z",
-        "updatedAt": "2025-04-30T09:41:02.053Z",
-        "barcode": "4874727824518",
-        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp"
     },
     {
       "id": "21",
@@ -2546,65 +2246,6 @@
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/4.webp"
       ],
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp"
-    },
-    {
-      "id": "57",
-      "title": "Fine Mesh Strainer",
-      "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.",
-      "category": "kitchen-accessories",
-      "price": 9.99,
-      "discountPercentage": 3.5,
-      "rating": 3.04,
-      "stock": 85,
-      "tags": [
-        "kitchen tools",
-        "strainers"
-      ],
-      "sku": "KIT-BRD-FIN-057",
-      "weight": 9,
-      "dimensions": {
-        "width": 18.02,
-        "height": 13.23,
-        "depth": 15.92
-      },
-      "warrantyInformation": "1 month warranty",
-      "shippingInformation": "Ships overnight",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 5,
-          "comment": "Very pleased!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Isabella Anderson",
-          "reviewerEmail": "isabella.anderson@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Aaliyah Hanson",
-          "reviewerEmail": "aaliyah.hanson@x.dummyjson.com"
-        },
-        {
-          "rating": 2,
-          "comment": "Would not recommend!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Layla Sullivan",
-          "reviewerEmail": "layla.sullivan@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "7 days return policy",
-      "minimumOrderQuantity": 43,
-      "meta": {
-        "createdAt": "2025-04-30T09:41:02.053Z",
-        "updatedAt": "2025-04-30T09:41:02.053Z",
-        "barcode": "8181672477425",
-        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/1.webp"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp"
     },
     {
       "id": "58",
@@ -10671,6 +10312,18 @@
       "title": "3sdaasdas",
       "price": "323434",
       "category": "sadsd"
+    },
+    {
+      "title": "vsdfg",
+      "price": "234234",
+      "category": "sdfsd",
+      "id": "T8_T9YL8-wM"
+    },
+    {
+      "title": "sadasd",
+      "price": "123123",
+      "category": "asdasd",
+      "id": "EWIwNrRzSxI"
     }
   ],
   "users": [
@@ -14455,74 +14108,11 @@
       "role": "user"
     },
     {
-      "id": "55",
-      "firstName": "Owen",
-      "lastName": "Fisher",
-      "maidenName": "",
-      "age": 32,
-      "gender": "male",
-      "email": "owen.fisher@x.dummyjson.com",
-      "phone": "+49 328-635-8057",
-      "username": "owenf",
-      "password": "owenfpass",
-      "birthDate": "1993-6-26",
-      "image": "https://dummyjson.com/icon/owenf/128",
-      "bloodGroup": "O-",
-      "height": 167.31,
-      "weight": 72.03,
-      "eyeColor": "Gray",
-      "hair": {
-        "color": "White",
-        "type": "Kinky"
-      },
-      "ip": "196.196.227.202",
-      "address": {
-        "address": "1486 Second Street",
-        "city": "Chicago",
-        "state": "Nevada",
-        "stateCode": "NV",
-        "postalCode": "54304",
-        "coordinates": {
-          "lat": 79.330781,
-          "lng": -13.162134
-        },
-        "country": "United States"
-      },
-      "macAddress": "65:e0:58:aa:7:b4",
-      "university": "University of Wisconsin--Madison",
-      "bank": {
-        "cardExpire": "12/29",
-        "cardNumber": "5103143689853920",
-        "cardType": "Mastercard",
-        "currency": "CNY",
-        "iban": "DE08501985146215650096"
-      },
-      "company": {
-        "department": "Human Resources",
-        "name": "Hilpert Inc",
-        "title": "Chief Financial Officer",
-        "address": {
-          "address": "782 Ninth Street",
-          "city": "Dallas",
-          "state": "Ohio",
-          "stateCode": "OH",
-          "postalCode": "31730",
-          "coordinates": {
-            "lat": -0.673163,
-            "lng": 3.835418
-          },
-          "country": "United States"
-        }
-      },
-      "ein": "711-285",
-      "ssn": "262-669-864",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
-      "crypto": {
-        "coin": "Bitcoin",
-        "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
-        "network": "Ethereum (ERC20)"
-      },
-      "role": "user"
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "email": "emily.johnson@x.dummyjson.com",
+      "phone": "+81 965-431-3024",
+      "id": "55"
     },
     {
       "id": "56",
@@ -25233,25 +24823,16 @@
         "network": "Ethereum (ERC20)"
       },
       "role": "user"
+    },
+    {
+      "firstName": "adasd",
+      "lastName": "asdasdas",
+      "email": "asdfasda",
+      "phone": "123123",
+      "id": "eXi5ZNhVsa4"
     }
   ],
   "posts": [
-    {
-      "id": "1",
-      "title": "His mother had always taught him",
-      "body": "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
-      "tags": [
-        "history",
-        "american",
-        "crime"
-      ],
-      "reactions": {
-        "likes": 192,
-        "dislikes": 25
-      },
-      "views": 305,
-      "userId": 121
-    },
     {
       "id": "2",
       "title": "He was an expert but not in a discipline",
@@ -26777,21 +26358,6 @@
       },
       "views": 1158,
       "userId": 161
-    },
-    {
-      "id": "99",
-      "title": "Like all men not really up to their job,",
-      "body": "a stickler for externals and petty quotidian things; and in lieu of an intellect he had accumulated an armoury of capitalized key-words like Discipline and Tradition and Responsibility.",
-      "tags": [
-        "crime",
-        "classic"
-      ],
-      "reactions": {
-        "likes": 1377,
-        "dislikes": 22
-      },
-      "views": 3342,
-      "userId": 154
     },
     {
       "id": "100",
@@ -29212,59 +28778,27 @@
       },
       "views": 867,
       "userId": 187
+    },
+    {
+      "title": "envio hoy",
+      "body": "sadasdawdwdasdawdwadqda",
+      "userId": "33",
+      "id": "rxSgA8B2a0I"
+    },
+    {
+      "title": "hola",
+      "body": "muy buenas",
+      "userId": "34",
+      "id": "AEC8ZwAtwrQ"
+    },
+    {
+      "title": "dfasdf",
+      "body": "sdfsdf",
+      "userId": "35",
+      "id": "otDlevEU7VQ"
     }
   ],
   "carts": [
-    {
-      "id": "1",
-      "products": [
-        {
-          "id": 168,
-          "title": "Charger SXT RWD",
-          "price": 32999.99,
-          "quantity": 3,
-          "total": 98999.97,
-          "discountPercentage": 13.39,
-          "discountedTotal": 85743.87,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
-        },
-        {
-          "id": 78,
-          "title": "Apple MacBook Pro 14 Inch Space Grey",
-          "price": 1999.99,
-          "quantity": 2,
-          "total": 3999.98,
-          "discountPercentage": 18.52,
-          "discountedTotal": 3259.18,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
-        },
-        {
-          "id": 183,
-          "title": "Green Oval Earring",
-          "price": 24.99,
-          "quantity": 5,
-          "total": 124.94999999999999,
-          "discountPercentage": 6.28,
-          "discountedTotal": 117.1,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/thumbnail.png"
-        },
-        {
-          "id": 100,
-          "title": "Apple Airpods",
-          "price": 129.99,
-          "quantity": 5,
-          "total": 649.95,
-          "discountPercentage": 12.84,
-          "discountedTotal": 566.5,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
-        }
-      ],
-      "total": 103774.85,
-      "discountedTotal": 89686.65,
-      "userId": 33,
-      "totalProducts": 4,
-      "totalQuantity": 15
-    },
     {
       "id": "2",
       "products": [
@@ -29324,66 +28858,6 @@
       "userId": 142,
       "totalProducts": 5,
       "totalQuantity": 20
-    },
-    {
-      "id": "3",
-      "products": [
-        {
-          "id": 98,
-          "title": "Rolex Submariner Watch",
-          "price": 13999.99,
-          "quantity": 1,
-          "total": 13999.99,
-          "discountPercentage": 16.35,
-          "discountedTotal": 11710.99,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/thumbnail.png"
-        },
-        {
-          "id": 125,
-          "title": "Oppo A57",
-          "price": 249.99,
-          "quantity": 5,
-          "total": 1249.95,
-          "discountPercentage": 16.54,
-          "discountedTotal": 1043.21,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20A57/thumbnail.png"
-        },
-        {
-          "id": 55,
-          "title": "Egg Slicer",
-          "price": 6.99,
-          "quantity": 2,
-          "total": 13.98,
-          "discountPercentage": 16.04,
-          "discountedTotal": 11.74,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/kitchen-accessories/Egg%20Slicer/thumbnail.png"
-        },
-        {
-          "id": 62,
-          "title": "Ice Cube Tray",
-          "price": 5.99,
-          "quantity": 2,
-          "total": 11.98,
-          "discountPercentage": 8.25,
-          "discountedTotal": 10.99,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/kitchen-accessories/Ice%20Cube%20Tray/thumbnail.png"
-        },
-        {
-          "id": 132,
-          "title": "Samsung Galaxy S8",
-          "price": 499.99,
-          "quantity": 3,
-          "total": 1499.97,
-          "discountPercentage": 8.84,
-          "discountedTotal": 1367.37,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S8/thumbnail.png"
-        }
-      ],
-      "total": 16775.87,
-      "discountedTotal": 14144.3,
-      "userId": 108,
-      "totalProducts": 5,
-      "totalQuantity": 13
     },
     {
       "id": "4",
